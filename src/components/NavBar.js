@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {
     Link
-  } from "react-router-dom";
+} from "react-router-dom";
 
 export default class NavBar extends Component {
     render() {
@@ -23,6 +23,19 @@ export default class NavBar extends Component {
                                 <li className="nav-item"><Link className="nav-link" to="/science">Science</Link></li>
                                 <li className="nav-item"><Link className="nav-link" to="/sports">Sports</Link></li>
                                 <li className="nav-item"><Link className="nav-link" to="/technology">Technology</Link></li>
+                            </ul>
+                        </div>
+                        <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                                <li className="nav-item dropdown">
+                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Country
+                                    </a>
+                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a className="dropdown-item active" href="#">in</a></li>
+                                        <li><a className="dropdown-item" href="#">us</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
